@@ -1,2 +1,3 @@
-# rubtsov-net-public
-Public static files for rubtsov.net. No backups or hosting credentials.
+# rubtsov.net
+
+Public static website files for Masterhost deployment. English by default, with a Russian language switch.

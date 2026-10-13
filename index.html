@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Konstantin Rubtsov — product leader at T-Bank. Digital products, product strategy, and teaching.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Konstantin Rubtsov — rubtsov.net</title>
+  <style>
+    :root { color-scheme: light; --ink: #242424; --muted: #787774; --rule: #e9e9e7; --link: #27734f; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+    body { margin: 0; background: #fff; color: var(--ink); font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+    .page { width: min(100% - 64px, 820px); margin: 0 auto; }
+    a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    a:hover { color: #174d34; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-radius: 2px; }
+    .skip { position: absolute; left: 20px; top: -80px; padding: 10px; background: white; z-index: 2; }
+    .skip:focus { top: 10px; }
+    .site-header, .site-footer { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .site-header { min-height: 72px; }
+    .brand { color: var(--ink); text-decoration: none; font-size: 18px; font-weight: 500; letter-spacing: -.4px; white-space: nowrap; }
+    nav { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 12px; line-height: 1.5; }
+    nav a:hover { color: var(--ink); }
+    .header-controls { display: flex; align-items: center; gap: 24px; }
+    .header-controls nav { flex: 1; min-width: 0; }
+    .language-switch { display: flex; flex-shrink: 0; gap: 2px; padding: 3px; background: #f5f5f4; border-radius: 7px; }
+    .language-switch button { padding: 7px 9px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); font: inherit; font-size: 11px; font-weight: 600; cursor: pointer; }
+    .language-switch button[aria-pressed="true"] { background: #fff; color: #171717; box-shadow: 0 1px 3px #0000000b; }
+    button:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+    .hero { padding: 70px 0 66px; text-align: center; }
+    .hero-heading { margin-bottom: 20px; }
+    .portrait { display: block; width: 136px; height: 136px; margin: 0 auto 26px; object-fit: cover; border-radius: 50%; }
+    h1, h2, h3 { color: #171717; font-weight: 700; }
+    h1 { margin: 0 0 18px; font-size: clamp(44px, 7.5vw, 76px); line-height: .99; letter-spacing: -3px; }
+    .role { margin: 0; color: var(--muted); font-size: 23px; line-height: 1.4; letter-spacing: -.5px; }
+    p { margin: 0 0 12px; }
+    .hero .intro { max-width: 650px; margin: 0 auto 28px; font-size: 18px; line-height: 1.5; color: #626260; }
+    .social { display: flex; gap: 18px; align-items: center; justify-content: center; font-size: 16px; }
+    .social a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 18px; min-height: 44px; background: #f4f4f3; border-radius: 11px; color: #171717; text-decoration: none; }
+    .social a:hover { background: #eaeae8; }
+    .social svg { width: 18px; height: 18px; }
+    .linkedin-icon { font-weight: 800; font-size: 18px; }
+    .section { border-top: 1px solid var(--rule); padding: 30px 0 32px; display: flow-root; }
+    h2 { margin: 0 0 15px; font-size: 34px; line-height: 1.2; letter-spacing: -1px; }
+    h3 { margin: 0 0 4px; font-size: 22px; line-height: 1.35; letter-spacing: -.45px; }
+    .teaching { margin-top: 26px; }
+    .channel { display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; padding: 11px 18px; min-height: 46px; border-radius: 6px; background: var(--ink); color: #fff; font-size: 16px; font-weight: 600; line-height: 1.4; text-decoration: none; }
+    .channel:hover { background: #41413e; color: #fff; }
+    .channel svg { flex: 0 0 auto; width: 18px; height: 18px; }
+    .project + .project { margin-top: 26px; }
+    .project p:last-child, .section > p:last-child { margin-bottom: 0; }
+    .topics { color: var(--muted); font-size: 16px; margin: 0 0 24px; }
+    .topics span { display: inline; }
+    .site-footer { border-top: 1px solid var(--rule); padding: 18px 0 28px; }
+    @media (max-width: 700px) {
+      .page { width: calc(100% - 40px); }
+      .site-header { align-items: flex-start; padding-top: 22px; flex-direction: column; gap: 14px; }
+      .header-controls { justify-content: space-between; width: 100%; gap: 14px; }
+      nav { gap: 10px 16px; }
+      .hero { padding: 54px 0 48px; }
+      .portrait { width: 104px; height: 104px; margin: 0 auto 22px; }
+      h1 { letter-spacing: -1.8px; }
+      .role { font-size: 20px; }
+      .hero .intro { font-size: 18px; }
+      body { font-size: 17px; }
+      h2 { font-size: 29px; letter-spacing: -.7px; }
+      h3 { font-size: 20px; }
+      .section { padding: 27px 0 30px; }
+      .site-footer { align-items: flex-start; flex-direction: column; gap: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="rubtsov.net — back to top">rubtsov.net</a>
+      <div class="header-controls"><nav aria-label="Site navigation">
+        <a href="#work" data-i18n="work">Work & teaching</a>
+        <a href="#products" data-i18n="products">Products</a>
+        <a href="#leadership" data-i18n="leadership">Product Leadership</a>
+      </nav><div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-language="ru" lang="ru" aria-label="Русский" aria-pressed="false">RU</button>
+        <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">ENG</button>
+      </div></div>
+    </header>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="name">
+        <img class="portrait" src="assets/konstantin-rubtsov.jpeg" width="136" height="136" alt="Konstantin Rubtsov" fetchpriority="high">
+        <div class="hero-heading">
+          <div>
+            <h1 id="name" data-i18n="text0">Konstantin<br>Rubtsov</h1>
+            <p class="role" data-i18n="text1">Product leader at T-Bank</p>
+          </div>
+        </div>
+        <p class="intro" data-i18n="text2">I build digital products for a broad audience. Over 15 years, I have moved from design and mobile development to leading product teams and shaping product strategy.</p>
+        <div class="social">
+          <a href="https://t.me/kostyarubtsov"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m21 3-3.4 17-5.4-4-3 3 .5-5.2L19 5.5 6.4 13.3 2 12Z"/></svg>Telegram</a><a href="https://ru.linkedin.com/in/kosrubtsov"><span class="linkedin-icon" aria-hidden="true">in</span>LinkedIn</a>
+        </div>
+      </section>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <h2 id="work-title" data-i18n="text3">Work and teaching</h2>
+        <p data-i18n="text4">I lead Non-financial Engagement at T-Bank.</p>
+        <p data-i18n="text5">We create new non-financial products at T-Bank — products that bring people back to the app for more than banking.</p>
+        <p data-i18n="text6">Before that, I worked on consumer AI products and product strategy at T-Bank.</p>
+        <div class="teaching">
+          <p data-i18n="text7">Alongside my main role, I reflect on my experience and share what I learn.</p>
+          <p data-i18n="text8">I currently teach Product Studio seminars at Central University, covering market and competitor analysis, research, and product decisions.</p>
+          <p data-i18n="text9">I previously supervised a student project at the British Higher School of Art and Design and spoke at Podlodka Product Crew about launching AI products.</p>
+          <p data-i18n="text10">I write about products, management, and the work of a product manager on Telegram.</p>
+          <a class="channel" href="https://t.me/kostyarubtsov"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.5 18 20c-.2 1.2-.9 1.5-1.9.9l-5.3-3.9-2.6 2.5c-.3.3-.5.5-1 .5l.4-5.4 9.9-9c.4-.4-.1-.6-.6-.3L4.7 13.1l-5.2-1.6c-1.1-.3-1.1-1.1.2-1.6L20 2.1c.9-.3 1.7.2 1.5 1.4Z"/></svg><span data-i18n="cta">Read my Telegram channel →</span></a>
+        </div>
+      </section>
+      <section class="section" id="products" aria-labelledby="products-title">
+        <h2 id="products-title" data-i18n="text11">What I have built</h2>
+        <article class="project">
+          <h3 data-i18n="text12">Mail.ru Mobile Mail</h3>
+          <p data-i18n="text13">I started my career in design and mobile products. I worked on Mail.ru Mobile Mail and gradually moved from development to product management.</p>
+        </article>
+        <article class="project">
+          <h3 data-i18n="text14">ICQ</h3>
+          <p data-i18n="text15">I developed mobile ICQ, including video calling. I worked on the product and led mobile development.</p>
+        </article>
+        <article class="project">
+          <h3 data-i18n="text16"><a href="https://botostore.com">BotoStore</a></h3>
+          <p data-i18n="text17">I launched my own startup — a directory of chatbots for Telegram and Facebook Messenger. I was responsible for product and design, assembled the team, and built the service from scratch. BotoStore grew to hundreds of thousands of monthly active users.</p>
+        </article>
+        <article class="project">
+          <h3 data-i18n="text18">Oleg Assistant</h3>
+          <p data-i18n="text19">At Tinkoff, I worked on consumer AI products for a broad audience.</p>
+          <p data-i18n="text20">I worked on <a href="https://tinkoff-group.com/press-center/company-news/21072020-new-skills-voice-assistant-oleg-eng/">Oleg Assistant</a> and launched the <a href="https://tinkoff-group.com/press-center/company-news/03062021-tinkoff-launches-open-telephone-assistant-oleg-defender-against-spammers-and-fraudsters-eng/">Telephone Secretary</a>. I later led the Oleg Assistant product.</p>
+        </article>
+        <article class="project">
+          <h3 data-i18n="text21">CPO Team and product strategy</h3>
+          <p data-i18n="text22">After working on individual products, I moved into product strategy. As part of the CPO Team, I worked on how the company chooses product priorities, formulates strategies, and evaluates the quality of product decisions.</p>
+        </article>
+      </section>
+      <section class="section" id="leadership" aria-labelledby="leadership-title">
+        <h2 id="leadership-title" data-i18n="text23">Product Leadership</h2>
+        <p data-i18n="text24">I am interested in building both individual products and an environment where strong products emerge consistently.</p>
+        <p class="topics" data-i18n="text25">Product strategy <span aria-hidden="true">·</span> Hiring <span aria-hidden="true">·</span> Product manager assessment and development <span aria-hidden="true">·</span> Mentoring</p>
+        <p data-i18n="text26">At T-Bank, I led the development of <strong>SCALE</strong> — a framework for assessing product managers’ professional level.</p>
+        <p data-i18n="text27">The framework helps define expectations at different professional levels, assess the scale of results, task complexity, autonomy, and leadership, and provide specific feedback and plan professional development.</p>
+        <p data-i18n="text28">I also worked on hiring processes, helped create a product strategy course, and mentored colleagues.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand" href="#top">rubtsov.net</a>
+      <nav aria-label="Footer navigation">
+        <a href="#work" data-i18n="work">Work & teaching</a>
+        <a href="#products" data-i18n="products">Products</a>
+        <a href="#leadership" data-i18n="leadership">Product Leadership</a>
+      </nav>
+    </footer>
+  </div>
+  <script src="assets/language.js"></script>
+</body>
+</html>
