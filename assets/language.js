@@ -148,6 +148,19 @@ function setLanguage(language, remember = false) {
   const meta = metadata[lang];
   document.title = meta.title;
   document.querySelector('meta[name="description"]').content = meta.description;
+  const socialMetadata = {
+    'og:title': meta.title,
+    'og:description': meta.description,
+    'og:locale': lang === 'ru' ? 'ru_RU' : 'en_US',
+    'og:locale:alternate': lang === 'ru' ? 'en_US' : 'ru_RU',
+    'twitter:title': meta.title,
+    'twitter:description': meta.description
+  };
+  Object.entries(socialMetadata).forEach(([key, value]) => {
+    const attribute = key.startsWith('og:') ? 'property' : 'name';
+    const element = document.querySelector(`meta[${attribute}="${key}"]`);
+    if (element) element.content = value;
+  });
   document.querySelector('.portrait').alt = meta.name;
   document.querySelector('.site-header nav').setAttribute('aria-label', meta.navigation);
   document.querySelector('.site-footer nav').setAttribute('aria-label', meta.footer);
