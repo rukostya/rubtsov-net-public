@@ -1,0 +1,24 @@
+{
+  "name": "Konstantin Rubtsov",
+  "short_name": "rubtsov.net",
+  "id": "https://rubtsov.net/",
+  "start_url": "https://rubtsov.net/",
+  "scope": "https://rubtsov.net/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://cpo.team/rubtsov/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://cpo.team/rubtsov/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
