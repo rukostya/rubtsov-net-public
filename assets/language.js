@@ -1,15 +1,16 @@
-const translations = {
+const translations =
+{
   "text28": {
     "ru": "Также занимался развитием процессов найма, участвовал в создании курса по продуктовой стратегии и менторил коллег.",
-    "en": "I also worked on hiring processes, helped create a product strategy course, and mentored colleagues."
+    "en": "I also worked on improving hiring processes, helped create a product strategy course, and mentored colleagues."
   },
   "text27": {
     "ru": "Модель помогает определять ожидания от разных уровней профессии, оценивать масштаб результатов, сложность задач, самостоятельность и лидерство, а также давать предметную обратную связь и планировать профессиональное развитие.",
-    "en": "The framework helps define expectations at different professional levels, assess the scale of results, task complexity, autonomy, and leadership, and provide specific feedback and plan professional development."
+    "en": "The framework helps define expectations for different levels of seniority and assess the scale of results, task complexity, autonomy, and leadership. It also helps provide specific feedback and plan professional development."
   },
   "text26": {
     "ru": "В Т-Банке я руководил разработкой <strong>SCALE</strong> — модели оценки профессионального уровня продакт-менеджеров.",
-    "en": "At T-Bank, I led the development of <strong>SCALE</strong> — a framework for assessing product managers’ professional level."
+    "en": "At T-Bank, I led the development of <strong>SCALE</strong> — a framework for assessing product managers’ levels of seniority."
   },
   "text24": {
     "ru": "Мне интересно не только создавать отдельные продукты, но и строить среду, в которой сильные продукты появляются системно.",
@@ -49,7 +50,7 @@ const translations = {
   },
   "text15": {
     "ru": "Развивал мобильную ICQ, в том числе направление видеозвонков. Работал над продуктом и руководил мобильной разработкой.",
-    "en": "I developed mobile ICQ, including video calling. I worked on the product and led mobile development."
+    "en": "I worked on the mobile version of ICQ, including video calling, and led mobile development."
   },
   "text14": {
     "ru": "ICQ",
@@ -81,7 +82,7 @@ const translations = {
   },
   "text7": {
     "ru": "Параллельно с основной работой систематизирую свой опыт и делюсь им с другими.",
-    "en": "Alongside my main role, I reflect on my experience and share what I learn."
+    "en": "Alongside my main role, I organize and share what I’ve learned from experience."
   },
   "text6": {
     "ru": "До этого занимался пользовательскими AI-продуктами и продуктовой стратегией Т-Банка.",
@@ -101,7 +102,7 @@ const translations = {
   },
   "text2": {
     "ru": "Создаю массовые цифровые продукты. За 15 лет прошёл путь от дизайна и мобильной разработки до управления продуктовыми направлениями и продуктовой стратегии.",
-    "en": "I build digital products for a broad audience. Over 15 years, I have moved from design and mobile development to leading product teams and shaping product strategy."
+    "en": "I build digital products for a broad audience. Over 15 years, I have moved from design and mobile development to leading product areas and shaping product strategy."
   },
   "text1": {
     "ru": "Руководитель продуктов в Т-Банке",
