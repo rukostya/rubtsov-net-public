@@ -2,7 +2,7 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{THE_REQUEST} \s/+index\.htm(?:[?\s]) [NC]
-  RewriteRule ^index\.htm$ / [R=301,L]
+  RewriteRule ^index\.htm$ https://rubtsov.net/ [R=301,L]
   RewriteCond %{THE_REQUEST} \s/+(?:[^?\s]*/)?index\.html(?:[?\s]) [NC]
-  RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+  RewriteRule ^(.*)index\.html$ https://rubtsov.net/$1 [R=301,L]
 </IfModule>
