@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://rubtsov.net/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/en/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/cu/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/cu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/cu/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/cu/"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/cu/en/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/cu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/cu/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/cu/"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/reforge/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/reforge/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/reforge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/reforge/"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/reforge/ru/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/reforge/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/reforge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/reforge/"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/reforge/library.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/reforge/ru/library.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/reforge/library.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/reforge/library.html"/>
+  </url>
+  <url>
+    <loc>https://rubtsov.net/reforge/ru/library.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rubtsov.net/reforge/ru/library.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rubtsov.net/reforge/library.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rubtsov.net/reforge/library.html"/>
+  </url>
+</urlset>
